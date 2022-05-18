@@ -1,0 +1,17 @@
+{
+	"private": true,
+	"main": "app.js",
+	"version": "1.2.0",
+	"name": "chatley-server",
+	"author": "Rishabh Kumar",
+	"engines": { "node": ">=16" },
+	"description": "Chatley server over WebSockets",
+	"scripts": { "start": "node app.js" },
+	"dependencies":
+	{
+		"ws": "^8.5.0",
+		"acebase": "^1.15.1",
+		"express": "^4.17.3",
+		"node-fetch": "^3.2.0"
+	}
+}
