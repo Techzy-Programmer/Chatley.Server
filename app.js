@@ -5,7 +5,7 @@ const WSock = require('ws'),
 cryptHsh = require('crypto'),
 expApp = require('express')(),
 strFY = (JObj) => JSON.stringify(JObj),
-wsServer = new WSock.Server({ port: 8080 }),
+wsServer = new WSock.Server({ port: process.env.PORT || 80 }),
 
 rndNum = (min, max) => {
 	min = Math.ceil(min); max = Math.floor(max);
